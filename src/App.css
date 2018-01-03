@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-Upper-Left {
+  font-size: large;
+  text-align: left;
+  width: 50%;
+  position: absolute;
+  left: 10px;
+}
+
+.App-Upper-Right {
+  font-size:  large;
+  text-align: right;
+  width: 50%;
+  position: absolute;
+  right: 10px;
+}
+
+.bigTime {
+    color: white;
+    font-size:  45px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
