@@ -6,18 +6,21 @@ class Weather extends React.Component {
     super(props);
     this.state = {data: []};
   }
-  Weathering(location) {
-    axios.get('http://api.openweathermap.org/data/2.5/weather?units=imperial&zip=85203,us&appid=269bcbcd138df64212d05055bd052e55')
+  componentWillMount() {
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?units=imperial&zip=85203,us&appid=${process.env.REACT_APP_WEATHER_API}`)
       .then((res) => {
-        this.setstate({ data: res.data });
-        console.log(res.data);
+        this.setState({ data: res.data });
+        console.log(this.state.data);
       })
   }
+
+  //switch statement
+
   render() {
+    //switch - terniarry
     return (
       <div>
         Weather goes here
-        {this.state.data}
       </div>
     );
   }
