@@ -36,5 +36,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+  var service = new google.maps.DistanceMatrixService;
+  service.getDistanceMatrix({
+    origins: [Phoenix],
+    destinations: [Mesa],
+    travelMode: 'DRIVING',
+    unitSystem: google.maps.UnitSystem.METRIC,
+    avoidHighways: false,
+    avoidTolls: false
+},…
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key="+ AIzaSyDhz9l-YB8vdKDpJ_3QN3B84u-MmfYxW54 +"&callback=initMap">
+</script>
   </body>
 </html>
